@@ -56,7 +56,7 @@ Previously, I worked with Dr. Valerie Arboleda at the University of California, 
 ### Plasma Chromatin Reveals Genetic Effects on Gene Expression, Proteins, and Disease Risk
 
 - Mapped cell-free chromatin QTLs and colocalized them with tissue and immune-cell molecular QTLs to identify shared regulatory signals.
-- Inferred gene expression from cfChIP-seq to map 4,622 cell-free expression QTLs, validated against GTEx with strong effect-size concordance.
+- Inferred gene expression from cfChIP-seq using APEX and mapped 4,622 cell-free expression QTLs, demonstrating strong effect-size concordance with GTEx eQTLs.
 - Integrated chromatin activity models with plasma protein QTLs and disease GWAS to link genetic variation to protein abundance and disease risk.
 
 <p class="research-links" aria-label="Related publications">
