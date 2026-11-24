@@ -66,7 +66,7 @@ Previously, I worked with Dr. Valerie Arboleda at the University of California, 
   <span aria-hidden="true">·</span>
   <a href="https://github.com/Baca-Lab/APEX">[APEX (GitHub)]</a>
   <span aria-hidden="true">·</span>
-  <a href="#publication-apex-preprint">[APEX (preprint)]</a>
+  <a href="#publication-apex-preprint">[APEX (Preprint)]</a>
 </p>
 
 </div>
@@ -90,7 +90,7 @@ Previously, I worked with Dr. Valerie Arboleda at the University of California, 
 <p class="research-links" aria-label="Related resources">
   <a href="https://github.com/Baca-Lab/SNAPIE">[SNAPIE (GitHub)]</a>
   <span aria-hidden="true">·</span>
-  <a href="#publication-snap-preprint">[SNAPIE (preprint)]</a>
+  <a href="#publication-snap-preprint">[SNAPIE (Preprint)]</a>
   <span aria-hidden="true">·</span>
   <a href="#publication-cancer-cell-2026">[Cancer Cell 2026]</a>
 </p>
