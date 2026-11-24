@@ -6,6 +6,7 @@ _site/
 local/
 outputs/
 tmp/
+output/
 
 # Ignore the Gemfile that is generated
 Gemfile.lock
