@@ -9,8 +9,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
+  // Dark is the first-visit default; restore a visitor's saved light preference
+  // before the stylesheet loads to avoid a flash of the other theme.
+  try {
+    var savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light' ||
+        (savedTheme === 'system' && !window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.removeAttribute('data-theme');
+    }
+  } catch (error) {
+    // Keep the dark default when local storage is unavailable.
+  }
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css?v={{ site.time | date: '%s' }}">

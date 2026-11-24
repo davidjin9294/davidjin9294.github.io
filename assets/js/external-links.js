@@ -1,0 +1,17 @@
+(function () {
+  document.querySelectorAll("a[href]").forEach(function (link) {
+    var url;
+
+    try {
+      url = new URL(link.href, window.location.href);
+    } catch (error) {
+      return;
+    }
+
+    if ((url.protocol === "http:" || url.protocol === "https:") &&
+        url.origin !== window.location.origin) {
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    }
+  });
+})();

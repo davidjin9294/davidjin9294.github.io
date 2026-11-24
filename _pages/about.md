@@ -1,56 +1,165 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Background"
+description: "Computational biologist studying cancer epigenomics, human genetics, and gene regulation."
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+<div class="home-intro" markdown="1">
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I am an Associate Computational Biologist at Dana-Farber Cancer Institute and Harvard Medical School, working with Dr. Sylvan Baca and Dr. Matthew Freedman. My research uses circulating chromatin and cell-free DNA to study gene regulation and cancer epigenomics.
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+My research interests center on understanding how genetic variation, chromatin organization, and epigenetic modifications interact to regulate gene expression and cellular states. Ultimately, I hope to determine how dysregulation of these processes contributes to human disease and translate these insights into molecular biomarkers and minimally invasive approaches for early disease detection and monitoring.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+Previously, I worked with Dr. Valerie Arboleda at the University of California, Los Angeles (UCLA), investigating host factors associated with variable clinical outcomes in patients with coccidioidomycosis.
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+</div>
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+<section class="home-section" id="education" markdown="1">
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+## Education
+{: #education-heading }
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+<div class="resume-entry">
+  <div class="resume-entry__details">
+    <strong>University of California, Los Angeles</strong>
+    <ul class="resume-entry__subitems">
+      <li>B.S. in Computer Science</li>
+      <li>GPA: 3.98/4.00 · summa cum laude</li>
+    </ul>
+  </div>
+  <span class="resume-entry__date">September 2021 – June 2025</span>
+</div>
 
-**Markdown generator**
+</section>
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+<section class="home-section" id="research" markdown="1">
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+## Research
+{: #research-heading }
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+<div class="research-position">
+  <header class="research-position__header">
+    <div class="research-position__details">
+      <strong>Dana-Farber Cancer Institute &amp; Harvard Medical School</strong><br>
+      Associate Computational Biologist<br>
+      <a href="https://bacalab.dana-farber.org/">Baca Lab</a> · <a href="https://labs.dana-farber.org/freedmanlab/">Freedman Lab</a>
+    </div>
+    <span class="research-position__date">August 2025 – present</span>
+  </header>
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+<div class="research-theme" markdown="1">
+
+### Plasma Chromatin Reveals Genetic Effects on Gene Expression, Proteins, and Disease Risk
+
+- Mapped cell-free chromatin QTLs and colocalized them with tissue and immune-cell molecular QTLs to identify shared regulatory signals.
+- Inferred gene expression from cfChIP-seq to map 4,622 cell-free expression QTLs, validated against GTEx with strong effect-size concordance.
+- Integrated chromatin activity models with plasma protein QTLs and disease GWAS to link genetic variation to protein abundance and disease risk.
+
+<p class="research-links" aria-label="Related publications">
+  <a href="#publication-cfcqtl-natcomm-2026">[Nat Commun 2026]</a>
+  <span aria-hidden="true">·</span>
+  <a href="#poster-cfcqtl-aacr-2027">[AACR 2027 (Submitted)]</a>
+  <span aria-hidden="true">·</span>
+  <a href="#publication-apex-preprint">[APEX]</a>
+</p>
+
+</div>
+
+<div class="research-theme" markdown="1">
+
+### Cell-Free DNA Methylation in Cancer and Immune-Related Diseases
+
+- Performed cell-type deconvolution and cancer subtyping in breast and small-cell lung cancer using cell-free MeDIP-seq, ultra-mild bisulfite sequencing (UMBS-seq), and enzymatic methylation sequencing (EM-seq).
+- Characterized cfDNA methylation patterns in plasma, urine, cerebrospinal fluid, and serum in cancer and immune-related disease.
+
+</div>
+
+<div class="research-theme" markdown="1">
+
+### Computational Methods for Cell-Free Epigenomics
+
+- Developed a beta-binomial model of allelic imbalance to detect tumor-specific signal attenuation, validated against whole-genome sequencing and applied across 682 assays in 15 cancer types.
+- Co-led SNAPIE, a Nextflow pipeline for reproducible cfChIP-seq and cfMeDIP-seq analysis.
+
+<p class="research-links" aria-label="Related resources">
+  <a href="https://github.com/Baca-Lab/SNAPIE">[SNAPIE]</a>
+  <span aria-hidden="true">·</span>
+  <a href="#publication-cancer-cell-2026">[Cancer Cell 2026]</a>
+</p>
+
+</div>
+
+</div>
+
+<div class="research-position">
+  <header class="research-position__header">
+    <div class="research-position__details">
+      <strong>University of California, Los Angeles</strong><br>
+      Undergraduate Student Researcher<br>
+      <a href="https://www.arboledalab.org/">Arboleda Lab</a>
+    </div>
+    <span class="research-position__date">March 2024 – June 2025</span>
+  </header>
+
+<div class="research-theme" markdown="1">
+
+### Genetic and Transcriptomic Determinants of Disseminated Coccidioidomycosis
+
+- Conducted ancestry-aware GWAS and identity-by-descent analyses of 795 individuals with coccidioidomycosis, identifying 5 loci nominally associated with dissemination.
+- Identified upregulation of interferon-response genes *IFI44* and *IFI44L* in disseminated disease from whole-blood RNA-seq of 267 individuals.
+
+<p class="research-links" aria-label="Related publication">
+  <a href="#publication-coccidioidomycosis-preprint">[Preprint]</a>
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="home-section" id="publications" markdown="1">
+
+## Publications
+{: #publications-heading }
+
+{% assign sorted_publications = site.publications | sort: "list_order" %}
+{% assign publication_number = 0 %}
+{% for category in site.publication_category %}
+{% assign category_publications = sorted_publications | where: "category", category[0] %}
+{% if category_publications.size > 0 %}
+<h3>{{ category[1].title }}</h3>
+{% for post in category_publications %}
+{% assign publication_number = publication_number | plus: 1 %}
+<article class="publication-entry"{% if post.anchor_id %} id="{{ post.anchor_id }}"{% endif %}>
+  <span class="publication-entry__number">[{{ publication_number }}]</span>
+  <div class="publication-entry__body">
+    <h4><a href="{{ post.paperurl }}">{{ post.title }}</a></h4>
+    <p class="publication-entry__meta">{% if post.category == 'published' %}<em>{{ post.venue }}</em> · {{ post.published_year }}{% elsif post.category == 'accepted' %}<em>{{ post.venue }}</em> · Preprint {{ post.date | date: "%Y" }}{% elsif post.preprint_only %}Preprint {{ post.date | date: "%Y" }}{% else %}{{ post.status }}{% if post.venue %} at <em>{{ post.venue }}</em>{% endif %} · Preprint {{ post.date | date: "%Y" }}{% endif %}</p>
+    <p class="publication-entry__authors">{{ post.authors }}</p>
+  </div>
+</article>
+{% endfor %}
+{% endif %}
+{% endfor %}
+
+### Conference posters and abstracts
+
+{% for poster in site.data.posters %}
+<article class="publication-entry"{% if poster.anchor_id %} id="{{ poster.anchor_id }}"{% endif %}>
+  <span class="publication-entry__number">[{{ forloop.index }}]</span>
+  <div class="publication-entry__body">
+    <h4>{{ poster.title }}</h4>
+    <p class="publication-entry__authors">{{ poster.authors }}</p>
+    <p class="publication-entry__meta">{{ poster.venue }}, {{ poster.year }}{% if poster.status %} · {{ poster.status }}{% endif %}</p>
+  </div>
+</article>
+{% endfor %}
+
+</section>
+
+<script src="/assets/js/research-highlights.js?v={{ site.time | date: '%s' }}" defer></script>
