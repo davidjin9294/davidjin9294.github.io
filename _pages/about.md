@@ -28,7 +28,7 @@ Previously, I worked with Dr. Valerie Arboleda at the University of California, 
     <strong>University of California, Los Angeles</strong>
     <ul class="resume-entry__subitems">
       <li>B.S. in Computer Science</li>
-      <li>GPA: 3.98/4.00 · summa cum laude</li>
+      <li>GPA: 3.98/4.00 · <em>summa cum laude</em></li>
     </ul>
   </div>
   <span class="resume-entry__date">September 2021 – June 2025</span>
