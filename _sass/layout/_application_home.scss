@@ -12,8 +12,40 @@
 }
 
 .sidebar .author__bio {
-  font-size: 0.9rem;
+  font-size: 0.84rem;
   line-height: 1.45;
+  text-align: center;
+
+  span {
+    display: block;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 925px) {
+  .sidebar .author__avatar img {
+    display: block;
+    max-width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sidebar .author__bio {
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sidebar .author__urls-wrapper {
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sidebar .author__urls {
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .publication-entry {

@@ -17,7 +17,10 @@
   <div class="author__content">
     {% unless page.url == "/" %}<h3 class="author__name">{{ author.name }}</h3>{% endunless %}
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% if author.bio %}
+      {% assign bio_lines = author.bio | split: ", " %}
+      <p class="author__bio">{% for bio_line in bio_lines %}<span>{{ bio_line }}</span>{% endfor %}</p>
+    {% endif %}
   </div>
 
   <div class="author__urls-wrapper">
