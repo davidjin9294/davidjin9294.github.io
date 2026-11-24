@@ -64,7 +64,9 @@ Previously, I worked with Dr. Valerie Arboleda at the University of California, 
   <span aria-hidden="true">·</span>
   <a href="#poster-cfcqtl-aacr-2027">[AACR 2027 (Submitted)]</a>
   <span aria-hidden="true">·</span>
-  <a href="#publication-apex-preprint">[APEX]</a>
+  <a href="https://github.com/Baca-Lab/APEX">[APEX (GitHub)]</a>
+  <span aria-hidden="true">·</span>
+  <a href="#publication-apex-preprint">[APEX (preprint)]</a>
 </p>
 
 </div>
@@ -86,7 +88,9 @@ Previously, I worked with Dr. Valerie Arboleda at the University of California, 
 - Co-led SNAPIE, a Nextflow pipeline for reproducible cfChIP-seq and cfMeDIP-seq analysis.
 
 <p class="research-links" aria-label="Related resources">
-  <a href="https://github.com/Baca-Lab/SNAPIE">[SNAPIE]</a>
+  <a href="https://github.com/Baca-Lab/SNAPIE">[SNAPIE (GitHub)]</a>
+  <span aria-hidden="true">·</span>
+  <a href="#publication-snap-preprint">[SNAPIE (preprint)]</a>
   <span aria-hidden="true">·</span>
   <a href="#publication-cancer-cell-2026">[Cancer Cell 2026]</a>
 </p>
