@@ -131,6 +131,8 @@ Previously, I worked with Dr. Valerie Arboleda at the University of California, 
 ## Publications
 {: #publications-heading }
 
+<p class="publication-note">* Indicates co-first authorship.</p>
+
 {% assign sorted_publications = site.publications | sort: "list_order" %}
 {% assign publication_number = 0 %}
 {% for category in site.publication_category %}
